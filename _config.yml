@@ -12,6 +12,7 @@ permalink: /:title/
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-avatar
 
 paginate: 5
 paginate_path: /page:num/
