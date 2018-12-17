@@ -34,6 +34,7 @@ layout: default
             <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&leftarrow; Newer</a>
             {% else %}
             <span class="inactive">&leftarrow; Newer</span>
+            {% endif %}
         </div>
 
         <div>
@@ -41,6 +42,7 @@ layout: default
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">Older &rightarrow;</a>
             {% else %}
             <span class="inactive">Older &rightarrow;</span>
+            {% endif %}
         </div>
     </div>
     {% endif %}
