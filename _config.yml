@@ -1,16 +1,20 @@
 title: Kappa
-email: kappa@kappactf.ru
 description: >-
-  Official blog of Kappa CTF Team from Saint Petersburg. Maybe we'll
-  publish awesome write-ups and inform about new items in our shop.
+  CTF Team from Saint Petersburg
 baseurl: "/"
 url: "https://kappactf.ru"
-#twitter_username: jekyllrb
 github_username:  kappactf
+email: blog@kappactf.ru
 
 markdown: kramdown
+permalink: /:title/
+
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: /page:num/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Kappa</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row pack">
+        {% for post in paginator.posts %}
+        <a class="col-md-4 card" href="{{ post.url | prepend: site.basurl }}">
+            {% if post.image %}
+            <div class="poster" style="background-image: {{ site.baseurl }}/images/{{ post.image }};">
+            {% else %}
+            <div class="poster" style="background-color: #abcdef;">
+            {% endif %}
+                <h2>{{ post.title | truncate: 25 }}</h2>
+                <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+            </div>
+            <div class="panel-body post-preview">
+                {{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+    
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        <div>
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&leftarrow; Newer</a>
+            {% else %}
+            <span class="inactive">&leftarrow; Newer</span>
+        </div>
+
+        <div>
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">Older &rightarrow;</a>
+            {% else %}
+            <span class="inactive">Older &rightarrow;</span>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
