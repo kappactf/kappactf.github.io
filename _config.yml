@@ -9,7 +9,6 @@ url: "https://kappactf.ru"
 github_username:  kappactf
 
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
