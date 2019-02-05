@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Kappa Blog!"
 date:   2018-12-17 13:37:00 +0300
-author: nsychev
+categories: kappa
 ---
 Welcome to Kappa Team Blog!
 
