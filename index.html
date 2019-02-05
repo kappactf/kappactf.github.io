@@ -24,21 +24,18 @@ layout: default
     {% endfor %}
     
     {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-        <div>
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&leftarrow; Newer</a>
-            {% else %}
-            <span class="inactive">&leftarrow; Newer</span>
-            {% endif %}
-        </div>
+    <ul class="pagination justify-content-center">
+        {% if paginator.previous_page %}
+        <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&leftarrow; Newer</a></li>
+        {% else %}
+        <li class="page-item disabled"><a class="page-link" href="#">&leftarrow; Newer</a></li>
+        {% endif %}
 
-        <div>
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">Older &rightarrow;</a>
-            {% else %}
-            <span class="inactive">Older &rightarrow;</span>
-            {% endif %}
+        {% if paginator.next_page %}
+        <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">Older &rightarrow;</a></li>
+        {% else %}
+        <li class="page-item disabled"><a class="page-link" href="#">Older &rightarrow;</a></li>
+        {% endif %}
         </div>
     </div>
     {% endif %}
