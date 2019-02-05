@@ -17,6 +17,9 @@ layout: default
         <p class="post-excerpt">
             {{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}
         </p>
+        <p class="post-link">
+            <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+        </p>
     </div>
     {% endfor %}
     
