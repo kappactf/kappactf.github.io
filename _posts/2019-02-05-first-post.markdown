@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Kappa Blog!"
-date:   2018-12-17 13:37:00 +0300
-categories: kappa
+title:  "Welcome to our blog!"
+date:   2019-02-05 13:37:00 +0300
+author: nsychev
 ---
 Welcome to Kappa Team Blog!
 
