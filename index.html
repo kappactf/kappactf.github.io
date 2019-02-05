@@ -4,28 +4,21 @@ layout: default
 
 <div class="jumbotron">
     <div class="container">
-        <h1>Kappa</h1>
+        <img src="/assets/img/kappa.png" class="float-left" alt="Kappa Team Logo" />
+        <p><span class="kappa">Kappa</span> is CTF team from Saint Petersburg</p>
     </div>
 </div>
 
 <div class="container">
-    <div class="row pack">
-        {% for post in paginator.posts %}
-        <a class="col-md-4 card" href="{{ post.url | prepend: site.basurl }}">
-            {% if post.image %}
-            <div class="poster" style="background-image: {{ site.baseurl }}/images/{{ post.image }};">
-            {% else %}
-            <div class="poster" style="background-color: #abcdef;">
-            {% endif %}
-                <h2>{{ post.title | truncate: 25 }}</h2>
-                <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
-            </div>
-            <div class="panel-body post-preview">
-                {{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}
-            </div>
-        </a>
-        {% endfor %}
+    {% for post in paginator.posts %}
+    <div class="blog-post">
+        <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+        <p class="blog-post-meta">{{ post.date | date: "%b %-d %Y" }} {% if post.author %}by {{post.author}}{% endif %}</p>
+        <p class="post-excerpt">
+            {{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}
+        </p>
     </div>
+    {% endfor %}
     
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
