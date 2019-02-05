@@ -1,2 +1,10 @@
-body {
+$kappa-gradient: linear-gradient(to right, red, orange , yellow, green, blue, violet);
+
+
+h1, .kappa {
+    font-weight: bold;
+    background: $kappa-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+

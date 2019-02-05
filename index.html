@@ -13,7 +13,7 @@ layout: default
     {% for post in paginator.posts %}
     <div class="blog-post">
         <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-        <p class="blog-post-meta">{{ post.date | date: "%b %-d %Y" }} {% if post.author %}by {{post.author}}{% endif %}</p>
+        <p class="blog-post-meta">{{ post.date | date: "%b %-d, %Y" }} {% if post.author %}by {{post.author}}{% endif %}</p>
         <p class="post-excerpt">
             {{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}
         </p>

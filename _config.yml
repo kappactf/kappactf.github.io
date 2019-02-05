@@ -6,6 +6,12 @@ url: "https://kappactf.ru"
 github_username:  kappactf
 email: blog@kappactf.ru
 
+kramdown:
+    input: GFM
+    hard_wrap: false
+    syntax_highlighterr: rouge
+    extensions: fenced_code_blocks
+
 markdown: kramdown
 permalink: /:title/
 
