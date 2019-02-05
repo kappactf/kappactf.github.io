@@ -3,7 +3,7 @@
 $kappa-gradient: linear-gradient(to right, red, orange , yellow, green, blue, violet);
 
 
-h1, .kappa {
+.kappa {
     font-weight: bold;
     background: $kappa-gradient;
     -webkit-background-clip: text;
