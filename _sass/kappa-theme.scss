@@ -10,3 +10,23 @@ h1, .kappa {
     -webkit-text-fill-color: transparent;
 }
 
+pre {
+    padding: 0.5rem;
+}
+
+footer {
+    font-size: 0.9rem;
+    color: #222;
+    margin-top: 1.5rem;
+    border-top: 1px solid #222;
+    padding-top: 1.5rem;
+}
+
+.main-header {
+    min-height: 7rem;
+}
+
+.kappa-logo {
+    height: 100%;
+    padding-right: 0.5rem;
+}
