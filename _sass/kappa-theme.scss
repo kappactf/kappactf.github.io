@@ -3,6 +3,18 @@
 $kappa-gradient: linear-gradient(to right, red, orange , yellow, green, blue, violet);
 
 
+.navbar-rb {
+    background: $kappa-gradient;
+
+    .navbar-brand, .nav-link {
+        color: #fff;
+    }
+
+    .navbar-text {
+        color: #ddd;
+    }
+}
+
 .kappa {
     font-weight: bold;
     background: $kappa-gradient;
