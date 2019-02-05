@@ -5,7 +5,7 @@ layout: default
 <div class="jumbotron">
     <div class="container">
         <h1><span class="kappa">{{ page.title }}</span></h1>
-        <p class="blog-post-meta">{{ page.date | date: "%-d %B %Y" }} {% if page.author %}by {% avatar {{page.author}} size=20 %} {{ page.author | default: site.author }}{% endif %}</p>
+        <p class="blog-post-meta">{{ page.date | date: "%b %-d, %Y at %H:%M" }} {% if page.author %}by {% avatar {{page.author}} size=20 %} <a href="https://github.com/{{page.author}}" target="_blank" class="blog-post-author">{{ page.author | default: site.author }}</a>{% endif %}</p>
     </div>
 </div>
 
