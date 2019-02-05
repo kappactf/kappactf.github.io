@@ -2,3 +2,8 @@
 ---
 
 @import "kappa-theme";
+
+body > div:first-child, a.btn-primary {
+        background: cyan;
+                background: linear-gradient(to right, red, orange , yellow, green, blue, violet);
+       }
