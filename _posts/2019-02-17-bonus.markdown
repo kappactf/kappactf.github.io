@@ -5,7 +5,7 @@ date:   2019-02-17 22:00:00 +0300
 author: nsychev
 ---
 
-Saint Petersburg, Russia and Internet, Feb 17, 2019. **[SPbCTF] Kappa** (ctftime: [1609][ctftime]), Saint Petersburg CTF Team, today announced launch of its new public financial service, the **Kappa Bonus**.
+Saint Petersburg, Russia and Internet, Feb 17, 2019. **[SPbCTF] Kappa** (ctftime: [1607][ctftime]), Saint Petersburg CTF Team, today announced launch of its new public financial service, the **Kappa Bonus**.
 
 ![Kappa Bonus Preview](/assets/img/2019-02-17-bonus.png)
 
@@ -23,6 +23,6 @@ In the meanwhile, we recommend to prepare for using Kappa Bonus by ordering some
 press@kappactf.ru
 
 
-[ctftime]: https://ctftime.org/team/1609
+[ctftime]: https://ctftime.org/team/1607
 [shop]: https://kappactf.ru/shop/
 
