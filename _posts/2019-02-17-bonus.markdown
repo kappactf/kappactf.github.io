@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Launch of Kappa Bonus"
+date:   2019-02-17 22:00:00 +0300
+author: nsychev
+---
+
+Saint Petersburg, Russia and Internet, Feb 17, 2019. **[SPbCTF] Kappa** (ctftime: [1608][ctftime]), Saint Petersburg CTF Team, today announced launch of its new public financial service, the **Kappa Bonus**.
+
+![Kappa Bonus Preview](/assets/img/2019-02-17-bonus.png)
+
+Starting from SPbCTF public attack-defense training, Kappa will accept flags from other team via its web interface, and will give payouts starting from $30 for received correct flags.
+
+For first month, the service will be available only for certain teams in beta mode. To request the access to **Kappa Bonus**, the team should send access request to bonus@kappactf.ru.
+
+“We think that such kind of services will refine all gameplay of attack-defense competitions,” says Nikita Sychev, Kappa Team spokesperson. “This service brings some kind of reality in CTF games and allows other team to choose the best way to manupulate with users’ stored data on their own servers.”
+
+The link to the service and full terms of service are to be clarified on the following week.
+
+**Public Relations**<br>
+press@kappactf.ru
+
+
+[ctftime]: https://ctftime.org/team/1608
+[shop]: https://kappactf.ru/shop/
+
