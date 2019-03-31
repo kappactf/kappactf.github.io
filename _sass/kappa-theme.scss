@@ -50,6 +50,13 @@ footer {
     font-size: 0.9rem;
 }
 
+blockquote {
+    border-left: 4px solid #333;
+    color: #333;
+    padding: 0 0 0 0.8rem;
+    font-size: 1.25rem;
+}
+
 .blog-post-author {
     font-weight: bold;
     text-decoration: none;
@@ -65,7 +72,7 @@ a.blog-post-author :hover {
 }
 
 .post-content.container {
-    & img {
+    & img.preview-wide {
         display: block;
         margin: auto;
         max-width: 100%;
@@ -75,3 +82,4 @@ a.blog-post-author :hover {
         max-width: 60%;
     }
 }
+
