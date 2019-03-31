@@ -68,6 +68,10 @@ a.blog-post-author :hover {
     & img {
         display: block;
         margin: auto;
+        max-width: 100%;
+    }
+
+    & img.preview-small {
         max-width: 60%;
     }
 }
