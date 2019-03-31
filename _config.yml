@@ -16,6 +16,7 @@ markdown: kramdown
 permalink: /:title/
 
 plugins:
+  - jemoji
   - jekyll-feed
   - jekyll-paginate
   - jekyll-avatar

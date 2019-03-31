@@ -3,6 +3,7 @@ layout: post
 title:  "VolgaCTF 2019 Quals: web 300 — Gallery [RU]"
 date:   2019-04-01 01:00:00 +0300
 author: juwilie
+excerpt: Райтап на таск Gallery с VolgaCTF 2019 Quals
 ---
 
 ![Условие](/assets/img/2019/04/volgactf-gallery/statement.png)
@@ -83,6 +84,6 @@ author: juwilie
 
 В ответ получили куку, с которой можно попробовать достать флаг методом `/api/flag`.
 
-![Успех](final.png)
+![Успех](/assets/img/2019/04/volgactf-gallery/final.png)
 
 :triangular_flag_on_post: **VolgaCTF{31c2ac53d4101a01264775328797d424}**
