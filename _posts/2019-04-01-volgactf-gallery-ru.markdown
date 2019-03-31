@@ -6,6 +6,8 @@ author: juwilie
 excerpt: Райтап на таск Gallery с VolgaCTF 2019 Quals
 ---
 
+> English version of this write-up will be published soon.
+
 ![Условие](/assets/img/2019/04/volgactf-gallery/statement.png){:class="preview-wide"}
 
 Заходим на сайт, кроме формы входа ничего не видим:
