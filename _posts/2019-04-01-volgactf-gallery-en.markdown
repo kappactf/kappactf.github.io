@@ -15,7 +15,7 @@ Let's open the website. We can see only login form here.
 
 ![Login form](/assets/img/2019/04/volgactf-gallery/login.png){:class="preview-wide"}
 
-We've run `dirsearch` on this host and found names like `package.json` and `sessions`. It probably means that it's a [node.js](https://nodejs.org/en/) application. Also we can find file `js/main.js`, which makes requests to API. We noticed that `autoindex` turned on and we're able to see the whole `js/` directory. And there is server side sources.
+We've run `dirsearch` on this host and found names like `package.json` and `sessions`. It probably means that it's a [node.js](https://nodejs.org/en/) application. Also we can find file `js/main.js`, which makes requests to API. We noticed that `autoindex` was enabled and we're able to see the whole `js/` directory. And there is server side sources.
 
 ![index: js](/assets/img/2019/04/volgactf-gallery/js.png){:class="preview-wide"}
 
@@ -23,7 +23,7 @@ We've run `dirsearch` on this host and found names like `package.json` and `sess
 
 Application is written on [Express](https://expressjs.com/) framework and served on port 4000. There is nginx on port 80, which forwards requests to Express. Application has only three methods: `/api/login` and `/api/logout` are not implemented. They return redirects to `/login`. Last endpoint checks your session and shows flag only if your name is `admin`.
 
-It turns out that all unknown requests are forwarded to port 5000 from `config.js` file. But this port isn't available from outside. Also we found secret key which is used in session signing. It seemed that task will be easy, but sessions are stored not in cookies but in files. We can't create new session, and there is no sessions in the respective directory. So we'll just remember it, right?
+It turns out that all unknown requests are forwarded to port 5000 from `config.js` file. But this port isn't available from outside. Also we found secret key which is used in session signing. It seemed that task will be easy, but sessions are stored in files, not in cookies. We can't create new session, and there is no sessions in the respective directory. So we'll just remember it, right?
 
 ![index: sessions](/assets/img/2019/04/volgactf-gallery/sessions.png){:class="preview-wide"}
 
@@ -77,7 +77,7 @@ We see `app.js` and `sessions` here, but this directory contains one session. It
 
 As you know, letter **S** in `npm` stands for security. So we remembered that sessions are stored inside JSON files. This functionality is provided by [session-file-store](https://www.npmjs.com/package/session-file-store) module. We've got into this library and [found](https://github.com/valery-barysok/session-file-store/blob/master/lib/session-file-helpers.js#L21) how session filename is generated. It's just prefix (`sessions/` in our case) concatenated with session ID from cookie with a slash.
 
-But we don't have sessions and moreover sessions are signed with *secret* key and we can't put some malicious content here. However we have one: what will happen if we substitute `../../volga_adminpanel/sessions/euzb7bMKx-5F29b2xNobGTDoWXmVFlEM` as session ID? As you may guess, Express will find the session. And we have secret key, so we can sign a session.
+But we don't have sessions and they're signed with *secret* key, so we can't put anything malicious here. However we have one: what will happen if we substitute `../../volga_adminpanel/sessions/euzb7bMKx-5F29b2xNobGTDoWXmVFlEM` as session ID? As you may guess, Express will find the session. And we have secret key, so we can sign a session.
 
 We didn't want to explore how session signing works in Express, so we ran copy of application locally, added session signing right inside `express-session` module and triggered it with an additional endpoint:
 
