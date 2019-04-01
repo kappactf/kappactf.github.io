@@ -3,7 +3,7 @@ layout: post
 title:  "VolgaCTF 2019 Quals: web 300 — Gallery [RU]"
 date:   2019-04-01 01:00:00 +0300
 author: juwilie
-excerpt: Райтап на таск Gallery с VolgaCTF 2019 Quals. [English version](/volgactf-gallery-en/)
+excerpt: Райтап на таск Gallery с VolgaCTF 2019 Quals
 ---
 
 > English version of this write-up is [here](/volgactf-gallery-en/)
