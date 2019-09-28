@@ -3,7 +3,7 @@ description: >-
   CTF Team from Saint Petersburg
 baseurl: "/"
 url: "https://kappactf.ru"
-github_username:  kappactf
+github_username: kappactf
 email: blog@kappactf.ru
 
 kramdown:
@@ -24,3 +24,4 @@ plugins:
 paginate: 5
 paginate_path: /page:num/
 
+timezone: Europe/Moscow
