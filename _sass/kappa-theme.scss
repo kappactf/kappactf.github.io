@@ -53,13 +53,19 @@ footer {
     min-height: 9rem;
 }
 
-@media screen and (min-width: 1200px) {
+.kappa-logo {
+    padding-right: 2rem;
+}
+
+@media screen and (max-width: 767px) {
     .kappa-logo {
-        height: 9rem;
+        display: none;
     }
-    
-    .main-header {
-        font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .kappa-logo {
+        height: 7.5rem;
     }
 }
 
@@ -73,15 +79,13 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .kappa-logo {
-        height: 7.5rem;
+        height: 9rem;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .kappa-logo {
-        display: none;
+    
+    .main-header {
+        font-size: 1.5rem;
     }
 }
 
