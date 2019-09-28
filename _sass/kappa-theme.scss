@@ -5,16 +5,18 @@ $kappa-gradient: linear-gradient(to right, red, orange , #eded00, green, deepsky
 
 .navbar-kappa {
     background: #000;
+    padding: 0;
 
     &>.container {
         background: url("/assets/img/kappa.png");
         background-repeat: no-repeat;
         background-size: auto 100%;
         background-position: left center;
+        padding: .5rem 15px;
     }
 
     .navbar-brand {
-        padding-left: 3rem;
+        padding-left: 3.5rem;
     }
 
     .navbar-brand, .nav-link {
