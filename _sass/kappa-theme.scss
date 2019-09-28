@@ -9,8 +9,8 @@ $kappa-gradient: linear-gradient(to right, red, orange , #eded00, green, deepsky
     &>.container {
         background: url("/assets/img/kappa.png");
         background-repeat: no-repeat;
-        background-size: auto 75%;
-        background-position: 1rem center;
+        background-size: auto 100%;
+        background-position: left center;
     }
 
     .navbar-brand {
@@ -53,9 +53,36 @@ footer {
     min-height: 9rem;
 }
 
-.kappa-logo {
-    height: 5rem;
-    padding-right: 2rem;
+@media screen and (min-width: 1200px) {
+    .kappa-logo {
+        height: 9rem;
+    }
+    
+    .main-header {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .kappa-logo {
+        height: 7.2rem;
+    }
+    
+    .main-header {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .kappa-logo {
+        height: 7.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .kappa-logo {
+        display: none;
+    }
 }
 
 .blog-post-meta {
