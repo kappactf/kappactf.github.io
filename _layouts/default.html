@@ -12,16 +12,18 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-kappa">
-        <a href="{{ "/" | absolute_url }}" class="navbar-brand mr-auto">Kappa CTF Team</a>
+        <div class="container">
+            <a href="{{ "/" | absolute_url }}" class="navbar-brand mr-auto">Kappa CTF Team</a>
 
-        <ul class="navbar-nav d-none d-md-block">
-            <li class="nav-item">
-                <a class="nav-link" href="/about.html">О нас</a>
-            </li>
-            <li class="nav-item navbar-text">
-                <strong>16+</strong>
-            </li>
-        </ul>
+            <ul class="navbar-nav d-none d-md-flex">
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="/about.html">О нас</a>
+                </li>
+                <li class="nav-item navbar-text">
+                    <strong>16+</strong>
+                </li>
+            </ul>
+        </div>
     </nav>
     
     {{ content }}
