@@ -3,15 +3,16 @@
 $kappa-gradient: linear-gradient(to right, red, orange , #eded00, green, deepskyblue, blue, violet);
 
 
-.navbar-rb {
-    background: $kappa-gradient;
+.navbar-kappa {
+    background: url("/assets/img/kappa.png") no-repeat left contain, #000;
+
 
     .navbar-brand, .nav-link {
-        color: #fff;
+        color: #4f4;
     }
 
     .navbar-text {
-        color: #eee;
+        color: #0f0;
     }
 }
 
