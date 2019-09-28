@@ -6,12 +6,12 @@ layout: default
     {% for post in paginator.posts %}
     <div class="blog-post">
         <h1><a class="kappa" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-        <p class="blog-post-meta">{{ post.date | date: "%b %-d, %Y" }} {% if post.author %}by <a href="https://github.com/{{post.author}}" class="blog-post-author">{{post.author}}</a>{% endif %}</p>
+        <p class="blog-post-meta">{{ post.date | date: "%b %-d, %Y" }} {% if post.author %}от <a href="https://github.com/{{post.author}}" class="blog-post-author">{{post.author}}</a>{% endif %}</p>
         <p class="post-excerpt">
-            {{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}
+            {{ post.excerpt | strip_html | strip_newlines }}
         </p>
         <p class="post-link">
-            <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">Читать &rightarrow;</a>
         </p>
     </div>
     {% endfor %}
@@ -19,15 +19,15 @@ layout: default
     {% if paginator.total_pages > 1 %}
     <ul class="pagination justify-content-center">
         {% if paginator.previous_page %}
-        <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&leftarrow; Newer</a></li>
+        <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}">&leftarrow; Назад</a></li>
         {% else %}
-        <li class="page-item disabled"><a class="page-link" href="#">&leftarrow; Newer</a></li>
+        <li class="page-item disabled"><a class="page-link" href="#">&leftarrow; Назад</a></li>
         {% endif %}
 
         {% if paginator.next_page %}
-        <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">Older &rightarrow;</a></li>
+        <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}">Вперёд &rightarrow;</a></li>
         {% else %}
-        <li class="page-item disabled"><a class="page-link" href="#">Older &rightarrow;</a></li>
+        <li class="page-item disabled"><a class="page-link" href="#">Вперёд &rightarrow;</a></li>
         {% endif %}
         </div>
     </div>
