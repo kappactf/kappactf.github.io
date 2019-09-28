@@ -13,7 +13,7 @@ kramdown:
     extensions: fenced_code_blocks
 
 markdown: kramdown
-permalink: /:title/
+permalink: /:year-:month-:day-:title/
 
 plugins:
   - jemoji
