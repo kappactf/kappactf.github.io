@@ -39,6 +39,28 @@ $kappa-gradient: linear-gradient(to right, red, orange , #eded00, green, deepsky
     -webkit-text-fill-color: transparent;
 }
 
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+thead tr {
+    background-color: #ccc;
+}
+
+thead th {
+    text-align: center;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #eee;
+}
+
 pre {
     padding: 0.5rem;
 }

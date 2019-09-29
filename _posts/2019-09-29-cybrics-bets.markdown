@@ -35,7 +35,6 @@ hidden: true
 | (RU) Corrupted Lights | (CN) r00tk1t | (IN) NULLKrypt3rs |
 | (RU) Bushwhackers | (RU) SUSlo.PAS | (RU) fargate |
 | (RU) Bushwhackers | (RU) fargate | (RU) SUSlo.PAS |
-| (IN) Guests | (IN) Guests | (IN) Guests |
 | (RU) Bushwhackers | (RU) SUSlo.PAS | (RU) Corrupted Lights |
 | (RU) fargate | (RU) C4T BuT S4D | (RU) Bushwhackers |
 | (RU) Bushwhackers | (RU) fargate | (RU) Corrupted Lights |
