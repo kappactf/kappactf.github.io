@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.scrollable {
+    width: 100%;
+    overflow: scroll hidden;
+}
+
+td {
+    min-width: 27px;
+    height: 27px;
+    vertical-align: middle;
+}
+
+td:first-child {
+    padding-right: .3rem;
+    text-align: right;
+}
