@@ -3,7 +3,6 @@ layout: post
 title:  "VolgaCTF 2020 Qualifier: Winner Bets"
 date:   2020-03-27 21:35:00 +0300
 author: nsychev
-hidden: true
 ---
 
 Just before Qualifier started, we launch bot where everyone could
